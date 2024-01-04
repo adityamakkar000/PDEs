@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
 
+
 def update(t):
     for i in range(rows):
       for j in range(cols):
@@ -41,7 +42,6 @@ cols = int((bbox[2] - bbox[0]) / cell_size)
 fig, ax = plt.subplots()
 grid = np.zeros((rows, cols), dtype=np.int32)
 cbar = fig.colorbar(ax.imshow(grid, cmap='hot', interpolation='nearest'))
-
 
 for i in range(rows):
     for j in range(cols):
