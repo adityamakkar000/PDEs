@@ -12,7 +12,7 @@ timeSteps = np.arange(0, timeRange, dt)
 
 
 bbox = [0, 0, 100000, 100000]
-cell_size = 10000
+cell_size = 1000
 rows = int((bbox[3] - bbox[1]) / cell_size)
 cols = int((bbox[2] - bbox[0]) / cell_size)
 k =  1
